@@ -1,5 +1,5 @@
 const FORMAT_DATE = 'yyyy/MM/dd';
-const FORMAT_TIME = 'hh:mm';
+const FORMAT_TIME = 'HH:mm';
 
 class Common {
 
