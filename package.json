@@ -1,0 +1,26 @@
+{
+  "name": "googlecalendersync",
+  "version": "1.0.0",
+  "description": "GoogleCalenderの予定を同期化する",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otowmoyarng/GoogleCalenderSync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otowmoyarng/GoogleCalenderSync/issues"
+  },
+  "homepage": "https://github.com/otowmoyarng/GoogleCalenderSync#readme",
+  "dependencies": {
+    "@google/clasp": "^2.4.1"
+  }
+}
