@@ -1,0 +1,2 @@
+# GoogleCalenderSync
+GoogleCalenderの予定を同期化する
