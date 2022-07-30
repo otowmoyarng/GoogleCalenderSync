@@ -2,7 +2,7 @@
  * プロパティキー名
  */
 const GASPropertiesKey = {
-    AccessToken: 'ACCESS_TOKEN',
+    CalendarId: 'CalendarId',
 };
 
 class GASProperties {
