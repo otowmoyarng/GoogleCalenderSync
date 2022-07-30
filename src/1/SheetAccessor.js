@@ -11,9 +11,9 @@ class SheetAccessor {
         events.shift();
         const list = events.map(row => {
             return {
-                Date: Common.GetCurrentYmd(row[0]),
-                TimeStart: row[1],
-                TimeEnd: row[2],
+                Date: Common.FormatDate(row[0]),
+                TimeStart: Common.FormatTime(row[1]),
+                TimeEnd: Common.FormatTime(row[2]),
                 Subject: row[3]
             }
         });
