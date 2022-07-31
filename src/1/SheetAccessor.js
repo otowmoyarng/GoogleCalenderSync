@@ -21,7 +21,11 @@ class SheetAccessor {
     }
 
     Add(date, timeStart, timeEnd, subject) {
-        Sheet.Events.appendRow([date, timeStart, timeEnd, subject]);
+        Sheet.Events.insertRowBefore(2);
+        const items = [date, timeStart, timeEnd, subject];
+        items.forEach((item, index) => {
+            Sheet.Events.getRange(2, index + 1).setValue(item);
+        });
     }
 }
 
