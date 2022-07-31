@@ -9,6 +9,7 @@ function SheetAccessorTest_Add() {
         Common.FormatDate(datetimeStart),
         Common.FormatTime(datetimeStart),
         Common.FormatTime(datetimeEnd),
-        "テスト件名");
+        "テスト件名",
+        "https://www.google.co.jp");
     console.log("更新結果:", sheetAccessor.GetEvents());
 }

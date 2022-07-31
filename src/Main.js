@@ -20,6 +20,7 @@ function Main(currentDate) {
             event.Date,
             event.TimeStart,
             event.TimeEnd,
-            event.Subject);
+            event.Subject,
+            event.Description);
     });
 }

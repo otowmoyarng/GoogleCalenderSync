@@ -14,15 +14,16 @@ class SheetAccessor {
                 Date: Common.FormatDate(row[0]),
                 TimeStart: Common.FormatTime(row[1]),
                 TimeEnd: Common.FormatTime(row[2]),
-                Subject: row[3]
+                Subject: row[3],
+                Description: row[4]
             }
         });
         return list;
     }
 
-    Add(date, timeStart, timeEnd, subject) {
+    Add(date, timeStart, timeEnd, subject, description) {
         Sheet.Events.insertRowBefore(2);
-        const items = [date, timeStart, timeEnd, subject];
+        const items = [date, timeStart, timeEnd, subject, description];
         items.forEach((item, index) => {
             Sheet.Events.getRange(2, index + 1).setValue(item);
         });

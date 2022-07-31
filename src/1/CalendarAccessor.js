@@ -27,7 +27,8 @@ class CalendarAccessor {
                 Date: Common.FormatDate(row.getStartTime()),
                 TimeStart: Common.FormatTime(row.getStartTime()),
                 TimeEnd: Common.FormatTime(row.getEndTime()),
-                Subject: row.getTitle()
+                Subject: row.getTitle(),
+                Description: row.getDescription()
             }
         });
         return list;
